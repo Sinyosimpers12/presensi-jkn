@@ -142,7 +142,7 @@
                                 <div x-show="!cameraReady && !cameraError" class="w-full max-w-md mx-auto h-64 bg-gray-100 rounded-lg flex items-center justify-center">
                                     <div class="text-center">
                                         <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-2"></div>
-                                        <p class="text-gray-600">Mengaktifkan kamera...</p>
+                                        <p class="text-gray-600">Mengaktifkan kamera ... </p>
                                     </div>
                                 </div>
 

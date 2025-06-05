@@ -75,7 +75,18 @@
                             <!-- User Info -->
                             <div class="px-4 py-2 border-b border-gray-200">
                                 <p class="text-sm font-medium text-gray-900">{{ Auth::user()->name }}</p>
-                                <p class="text-xs text-gray-500">{{ Auth::user()->username }}</p>
+                               
+                                
+                                <p class="text-sm font-semibold text-gray-450">
+                                    @if(Auth::user()->isAdmin())
+                                        Administrator
+                                    @else
+                                        {{ Auth::user()->employee->employee_id ?? 'Karyawan' }}
+                                    @endif  
+                                </p>
+
+                                
+
                                 @if(Auth::user()->employee)
                                     <p class="text-xs text-gray-500">{{ Auth::user()->employee->employee_id }}</p>
                                 @endif

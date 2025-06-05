@@ -4,7 +4,7 @@
             {{ __('Face Enrollment Management') }}
         </h2>
     </x-slot>
-
+    
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
@@ -550,7 +550,6 @@
             window.location.href = `/face-enrollment/export?${params.toString()}`;
         }
 
-        // Auto-refresh every 5 minutes
         setInterval(() => {
             if (document.hidden) return; // Don't refresh if tab is not visible
             refreshStats();
